@@ -20,6 +20,7 @@ function onSearch(e) {
     return (refs.list.innerHTML = '');
   }
 
+  // Function
   fetchCountries(inputName)
     .then(countries => {
       clearHTML();
