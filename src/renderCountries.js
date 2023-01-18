@@ -22,5 +22,5 @@ function renderCountryCards(country) {
 
   refs.info.insertAdjacentHTML('beforeend', markup);
 }
-
+// Export
 export { renderCountries, renderCountryCards };
