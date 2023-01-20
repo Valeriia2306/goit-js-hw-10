@@ -17,6 +17,7 @@ function onSearch(e) {
   const inputName = e.target.value;
 
   if (inputName.trim() === '') {
+    clearHTML();
     return (refs.list.innerHTML = '');
   }
 
@@ -30,6 +31,7 @@ function onSearch(e) {
     })
     .catch(error => {
       console.log(error);
+      clearHTML();
       failure();
     });
 }
